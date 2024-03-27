@@ -38,6 +38,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
   @override
   void dispose() {
+    super.dispose();
     pageController.dispose();
   }
 
@@ -68,7 +69,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             dotsCount: popularProducts.popularProductList.isEmpty
                 ? 1
                 : popularProducts.popularProductList.length,
-            position: _currPageValue,
+            position: _currPageValue.toInt(),
             decorator: DotsDecorator(
               color: AppColors.mainColor,
               size: const Size.square(9.0),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'app_icon.dart';
 import 'big_text.dart';
 
+// ignore: must_be_immutable
 class AccountWidget extends StatelessWidget {
   AppIcon appIcon;
   BigText bigText;

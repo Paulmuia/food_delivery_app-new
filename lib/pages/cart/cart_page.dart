@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/base/no_data_page.dart';
-import 'package:food_delivery/pages/main_food_page.dart';
 import 'package:food_delivery/products/cart_controller.dart';
 import 'package:food_delivery/products/popular_product_controller.dart';
 import 'package:food_delivery/routes/route_helper.dart';

@@ -1,5 +1,9 @@
+// ignore_for_file: unused_field
+
 class Product {
   int? _totalSize;
+  // ignore: duplicate_ignore
+  // ignore: unused_field
   int? _typeId;
   int? _offset;
   late List<ProductModel> _products;

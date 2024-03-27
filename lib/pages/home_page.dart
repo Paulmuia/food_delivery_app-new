@@ -1,11 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery/account/account_page.dart';
-import 'package:food_delivery/pages/auth/sign_up_page.dart';
 import 'package:food_delivery/pages/cart/cart_history.dart';
 import 'package:food_delivery/pages/main_food_page.dart';
 import 'package:food_delivery/widgets/colors.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 import 'auth/sign_in_page.dart';
 

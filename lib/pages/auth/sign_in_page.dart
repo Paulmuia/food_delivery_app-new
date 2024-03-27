@@ -5,10 +5,8 @@ import 'package:food_delivery/routes/route_helper.dart';
 import 'package:food_delivery/widgets/app_text_field.dart';
 import 'package:food_delivery/widgets/big_text.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../base/show_custom_snackbar.dart';
-import '../../products/Signup_body_model.dart';
 import '../../products/auth_controller.dart';
 import '../../widgets/colors.dart';
 

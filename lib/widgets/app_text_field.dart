@@ -1,8 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
 
+// ignore: must_be_immutable
 class AppTextField extends StatelessWidget {
   final TextEditingController textController;
   final String hintText;

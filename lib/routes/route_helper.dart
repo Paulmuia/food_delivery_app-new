@@ -1,7 +1,6 @@
 import 'package:food_delivery/home/popular_food_detail.dart';
 import 'package:food_delivery/pages/cart/cart_page.dart';
 import 'package:food_delivery/pages/home_page.dart';
-import 'package:food_delivery/pages/main_food_page.dart';
 import 'package:food_delivery/pages/splash/splash_page.dart';
 import 'package:get/get.dart';
 

@@ -1,23 +1,18 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:food_delivery/pages/main_food_page.dart';
 import 'package:food_delivery/products/popular_product_controller.dart';
 import 'package:food_delivery/widgets/app_icon.dart';
 import 'package:food_delivery/widgets/expandable_text_widget.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../widgets/big_text.dart';
-import '../../widgets/icon_and_text_widget.dart';
-import '../../widgets/small_text.dart';
 import '../api/app_column.dart';
 
 import '../api/app_constants.dart';
-import '../pages/cart/cart_page.dart';
 import '../products/cart_controller.dart';
 import '../routes/route_helper.dart';
 import '../widgets/colors.dart';
 
+// ignore: must_be_immutable
 class PopularFoodDetail extends StatelessWidget {
   int pageId;
   final String page;
