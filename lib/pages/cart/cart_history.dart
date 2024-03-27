@@ -8,7 +8,6 @@ import 'package:food_delivery/widgets/app_icon.dart';
 import 'package:food_delivery/widgets/big_text.dart';
 import 'package:food_delivery/widgets/small_text.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:intl/intl.dart';
 
 import '../../api/app_constants.dart';
@@ -64,7 +63,7 @@ class CartHistory extends StatelessWidget {
             height: 100,
             color: AppColors.mainColor,
             width: double.maxFinite,
-            padding: EdgeInsets.only(top: 45),
+            padding: const EdgeInsets.only(top: 45),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -81,10 +80,10 @@ class CartHistory extends StatelessWidget {
             ),
           ),
           GetBuilder<CartController>(builder: (_cartController) {
-            return _cartController.getCartHistoryList().length > 0
+            return _cartController.getCartHistoryList().isNotEmpty
                 ? Expanded(
                     child: Container(
-                        margin: EdgeInsets.only(top: 20, left: 20, right: 20),
+                        margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
                         child: MediaQuery.removePadding(
                           removeTop: true,
                           context: context,
@@ -93,13 +92,13 @@ class CartHistory extends StatelessWidget {
                               for (int i = 0; i < itemsPerOrder.length; i++)
                                 Container(
                                   height: 120,
-                                  margin: EdgeInsets.only(bottom: 20),
+                                  margin: const EdgeInsets.only(bottom: 20),
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
                                       timeWidget(listCounter),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 10,
                                       ),
                                       Row(
@@ -118,7 +117,7 @@ class CartHistory extends StatelessWidget {
                                                   ? Container(
                                                       height: 80,
                                                       width: 80,
-                                                      margin: EdgeInsets.only(
+                                                      margin: const EdgeInsets.only(
                                                           right: 5),
                                                       decoration: BoxDecoration(
                                                           borderRadius:
@@ -152,9 +151,7 @@ class CartHistory extends StatelessWidget {
                                                     color:
                                                         AppColors.titleColor),
                                                 BigText(
-                                                  text: itemsPerOrder[i]
-                                                          .toString() +
-                                                      " Items",
+                                                  text: "${itemsPerOrder[i]} Items",
                                                   color: AppColors.titleColor,
                                                 ),
                                                 GestureDetector(
